@@ -37,4 +37,5 @@ def update_total_xp(selected_item, quantity):
 
 # Run the app
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.server.run(debug=True, port=int(os.environ.get('PORT', 8050)), host='0.0.0.0')
+
